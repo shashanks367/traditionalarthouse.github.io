@@ -1,0 +1,278 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Navbar CSS */
+
+.navigation_header{
+    width: 100vw;
+    line-height: 4rem;
+    background: #f8f9fa;
+}
+.navbar-brand{
+    font-size: 1.7rem;
+    font-weight: 520;
+    color: black;
+    font-family: 'Lora', serif;
+}
+
+.nav-item{
+    font-size: 1.7rem;
+    margin-left: 0.8rem;
+    color: #6c757d;
+}
+
+.navbar-nav{
+    padding-left: 3rem;
+}
+
+.navbar-nav .nav-item a .nav-link{
+    color: #6c757d;
+    padding: 0.5rem 0;
+}
+
+.dropdown-menu .dropdown-item{
+    font-size: 1.7rem;
+    color: #6c757d;
+}
+
+.dropdown-menu .dropdown-item:active{
+    background-color: #e4e7eb;
+}
+
+a{
+    text-decoration: none;
+    color:#0000008C;
+}
+a:hover{
+    color: black;
+}
+
+.signIn_btn{
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    padding: 0.1rem 2rem;
+    border-radius: 33px;
+    outline: none;
+    background: white;
+    border-color:#809fff;
+
+}
+
+.signIn_btn:hover{
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,14,214,1) 0%, rgba(111,215,236,1) 100%);
+}
+
+/* Image carousel section */
+.imageCarousel{
+    width: 100vw;
+}
+
+/* Home page header content CSS */
+
+.homepgeheader{
+    margin-top: 6rem;
+}
+
+.homepgeheader h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-family: 'Lora', serif;
+    color: rgb(85, 82, 82);
+}
+
+.homepgeheader p{
+    text-align: center;
+    font-size: 2rem;
+}
+/* Message template */
+
+.messageTemplate{
+    width: 100vw;
+    background: #f8f9fa;
+    margin-top: 7rem;
+}
+
+.messageTemplateTitle h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-family: 'Lora', serif;
+    color: rgb(85, 82, 82);
+    margin: 2rem 0 ;
+}
+
+.messgeTemplateImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    position: relative;
+    border-radius: 50%;
+}
+
+.messgeTemplateImage h1{
+    position: absolute;
+    font-family: 'Lora', serif;
+    color: black;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 9rem;
+}
+
+.messgeTemplateImage h1 span{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.messgeTemplateImage h1:hover{
+    cursor: pointer;
+    animation: springMotion 3s linear  infinite alternate;
+}
+
+@keyframes springMotion{
+    from{
+        transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
+}
+
+/* Who we work with section CSS */
+.marketing{
+    margin-top: 7rem;
+}
+
+.marketingTitle{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-family: 'Lora', serif;
+    color: rgb(85, 82, 82);
+}
+
+.marketingImage{
+    display: flex;
+    justify-content: center;
+}
+.marketing h2{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.marketing p{
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+
+/* Home page order image content CSS */
+
+.homePageStory{
+    margin-top: 8rem;
+}
+
+.homePageStoryTitle{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-family: 'Lora', serif;
+    color: rgb(85, 82, 82);
+
+}
+.homePageStory h2{
+    font-size: 2rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+.homePageStory p {
+    font-size: 1.6rem;
+}
+
+/* Customer Review section CSS */
+
+.customerReview{
+    margin-top: 7rem;
+}
+
+.customerReviewTitle{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-family: 'Lora', serif;
+    color: rgb(85, 82, 82);
+}
+
+.customerReview i{
+    display: flex;
+    justify-content: center;
+}
+
+.customerReview p{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+/* Footer CSS */
+.footer {
+    bottom: 0;
+    width: 100vw;
+    height: 2.5rem;
+    margin-top: 4rem;   
+    background: #f8f9fa;        
+  }
+.footer p{
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    margin: 0% 0%;
+}
+
+/* Media Querry */
+
+@media only screen and (min-width:992px)and (max-width:1260px) {
+
+    .messgeTemplateImage h1{
+        font-size: 2rem;
+        padding: 0 8rem;
+    }
+    .messgeTemplateImage h1 span{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .messageTemplate{
+        display: none;
+    }
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color:#0000008C;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
